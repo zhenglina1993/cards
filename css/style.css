@@ -1,0 +1,1046 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:pingfang sc, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul, ol ,li{
+    list-style: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #fff; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #fff; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #fff; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #fff; 
+} 
+body, div, a, span, ul, li, img, div:after, div:before, a:after, a:before, span:after, span:before, ul:after, ul:before, li:after, li:before, img:after, img:before {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background: #000;
+    position: relative;
+    max-height: 640px;
+}
+input[type="text"],input[type="button"],input[type="number"],input[type="password"],select,textarea{
+    -webkit-appearance:none;
+    outline: none;
+    border-radius: 0;
+}
+.mode1{
+    width: 100%;
+    height: 100%;
+    max-height: 660px;
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    background:#ba3b25 url(../images/bg.jpg) repeat center top;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mode1img img,.mode2img img{ 
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    
+}
+.mode1img img{
+    top: 0;
+}
+
+.mode2img img{
+    top: 8%;
+}
+.mode3img img{
+    position: absolute;
+    top: 23%;
+    z-index: 1;
+    width: 100px;
+    right: -30px;
+}
+.mode4img img{
+    width: 120px;
+}
+.mode4img img{
+    position: absolute;
+    top: 44%;
+    z-index:0;
+    left: -40px;
+}
+
+.mode5img img{
+    width: 168px;
+    left: calc((100% - 168px) /2);
+    position: absolute;
+    top: 19%;
+    z-index: 3;
+}
+.mode6img img{
+    width: 320px;
+    position: absolute;
+    left: calc((100% - 320px ) /2);
+    top: 27%;
+    z-index: 2;
+}
+.mode7img img{
+    width: 200px;
+    position: absolute;
+    left: calc((100% - 200px ) /2);
+    top: 41%;
+    z-index: 5;
+}
+.mode8img{
+    width: 100%;
+    height: 100%;
+}
+.mode8img img{
+    width: 290px;
+    position: absolute;
+    bottom: 18px;
+    left: calc((100% - 290px ) / 2);
+    z-index: 2;
+}
+.mode9img img{
+   width: 40px;
+    position: absolute;
+    bottom: 42%;
+    left: 15%;
+    z-index: 2;
+}
+.mode10img img{
+    width: 80px;
+    position: absolute;
+    bottom: 32%;
+    left: 0%;
+    z-index: 2;
+}
+.mode11img img{
+    width: 60px;
+    position: absolute;
+    bottom: 18%;
+    right: 0%;
+    z-index: 2;
+}
+.mode12img img{
+    width: 100%;
+    position: absolute;
+    bottom: -63px;
+    left: 0;
+    z-index: 3;
+    height: 160px;
+}
+.mode13img img,.mode14img img{
+        width: 74px;
+    position: absolute;
+    bottom: 37px;
+    z-index: 2;
+}
+.mode13img img{
+    left: calc((100% - 154px ) / 2);
+}
+.mode14img img{
+    right: calc((100% - 149px ) / 2);
+}
+.mode15img img{
+    width: 30px;
+    position: absolute;
+    bottom: 13px;
+    left: calc((100% - 30px ) / 2);
+    z-index: 5;
+}
+.mode16img img{
+    width: 100px;
+    position: absolute;
+    bottom: -35px;
+    left: calc((100% - 100px ) / 2);
+    z-index:4;
+}
+.hide{
+    display: none;
+}
+.mode15img{
+    width: 290px;
+    height: 168px;
+    position: absolute;
+    left: calc((100% - 290px ) /2);
+    z-index: 9999;
+    bottom: 39px;
+}
+.mode16img img{
+    opacity: 0;
+}
+
+.mode2{
+    opacity: 0;
+    background:#ba3b25 url(../images/bg.jpg) no-repeat center top;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.operat{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin:30px auto 15px;
+}
+.img-list {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+.operat button,.operat input{
+    border: 1px solid #f2cc0c;
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight:600;
+    border-radius: 8px;
+    background: url(../images/line.png) repeat-x center;
+    background-size: 100%;
+}
+.operat input.name{
+    width: 65%;
+    padding: 0 12px;
+    float: left;
+}
+.operat button.pro{
+    width:20%;
+    float: right;
+}
+.operat p{
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: #f2cc0c;
+    margin-top: 10px;
+}
+.img-list li{
+    width: 33.3%;
+    height: 70px;
+    float: left;
+    background: url(../images/txtbg1.png) no-repeat center;
+    background-size: auto 60px;
+}
+.img-list li img{
+    height: 17px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 24px;
+}
+.img-list li.on{
+    background: url(../images/txtbg2.png) no-repeat center;
+    background-size: auto 60px;
+}
+.mode17img img{
+    width: 136px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.mode18img img{
+    width: 136px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+.mode19img img{
+        width: 111px;
+    position: absolute;
+    right: 0;
+    top: 48%;
+    z-index:3;
+}
+.mode20img img{
+    width: 118px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: 3;
+}
+.mode21img img{
+    width: 55px;
+    position: absolute;
+    left: calc((100% - 300px) / 2);
+    bottom: 50px;
+    z-index: 8;
+}
+.mode22img img{
+    width: 55px;
+    position: absolute;
+    right: calc((100% - 280px) / 2);;
+    bottom: 50px;
+    z-index: 8;
+}
+.mode23img img{
+    width: 137px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+.mode24img img{
+    width: 98px;
+    position: absolute;
+    left: 35px;
+    bottom: 0;
+    z-index: 8;
+}
+.mode25img img{
+    width: 88px;
+    position: absolute;
+    left: 144px;
+    bottom: 0;
+    z-index: 8;
+}
+/*动画*/
+
+.mode15img img{
+    -webkit-animation: fadeInUp 1s 0.5s 1 both,pulse 1s 0.5s infinite forwards;
+    -moz-animation: fadeInUp 1s 0.5s 1 both,pulse 1s 0.5s infinite forwards;
+    animation: fadeInUp 1s 0.5s 1 both,pulse 1s 0.5s infinite forwards;
+    z-index: 6;
+}
+/*打开图片*/
+.open{
+    -webkit-animation: zoomIn 1s  1 forwards;
+    -moz-animation: zoomIn 1s  1 forwards;
+    animation: zoomIn 1s  1 forwards;
+}
+/*移除页面*/
+.remove{
+    -webkit-animation: fadeOut 1s 0.8s 1 forwards;
+    -moz-animation: fadeOut 1s 0.8s 1 forwards;
+    animation: fadeOut 1s 0.8s 1 forwards;
+}
+/*显示页面*/
+.openPage{
+    -webkit-animation: fadeIn 1s 1s 1 forwards;
+    -moz-animation: fadeIn 1s 1s 1 forwards;
+    animation: fadeIn 1s 1s 1 forwards;
+}
+.mode21img img{
+    -webkit-animation: swing 10s ease 0.5s infinite normal both;
+    -moz-animation: swing 10s ease 0.5s infinite normal both;
+    animation: swing 10s ease 0.5s infinite normal both;
+}
+.mode22img img{
+     -webkit-animation: swing 10s  ease 0.5s infinite normal both;
+    -moz-animation: swing 10s  ease 0.5s infinite normal both;
+    animation: swing 10s  ease 0.5s infinite normal both;
+}
+
+
+
+
+
+/*账单*/
+.zd{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.zd h2{
+    font-size: 24px;
+    color: #fff;
+    letter-spacing:2px;
+    font-weight: 400;
+}
+.zd .color{
+    color: #ec602a;
+    opacity: 0;
+}
+
+.zd1,.zd2,.zd3,.zd4,.zd5,.zd6,.zd7,.zd8{
+    width: 100%;
+    height: 100%;
+    max-height: 660px;
+    overflow: hidden;
+    position: relative;
+}
+.zd1wrap ,.zd2wrap,.zd3wrap,.zd4wrap,.zd5wrap,.zd6wrap,.zd7wrap,.zd8wrap {
+    /*position: absolute;*/
+    width: 100%;
+    
+    height: 100%;
+}
+.zd1 .zd1wrap{
+    background: url(../images/zd/bg1.png) no-repeat center top;
+    background-size: cover;
+}
+.zd2 .zd1wrap,.zd3 .zd1wrap
+,.zd4 .zd1wrap,.zd5 .zd1wrap
+,.zd6 .zd1wrap,.zd7 .zd1wrap
+,.zd8 .zd1wrap{
+    background: url(../images/zd/bg2.jpg) no-repeat center top;
+    background-size: cover;
+}
+/*.zd3 .zd1wrap{
+    background: url(../images/zd/bg3.jpg) no-repeat center top;
+    background-size: cover;
+}
+.zd4 .zd1wrap{
+    background: url(../images/zd/bg4.jpg) no-repeat center top;
+    background-size: cover;
+}
+.zd5 .zd1wrap{
+    background: url(../images/zd/bg5.jpg) no-repeat center top;
+    background-size: cover;
+}
+.zd6 .zd1wrap{
+    background: url(../images/zd/bg6.jpg) no-repeat center top;
+    background-size: cover;
+}
+.zd7 .zd1wrap{
+    background: url(../images/zd/bg7.jpg) no-repeat center top;
+    background-size: cover;
+}
+.zd8 .zd1wrap{
+    background: url(../images/zd/bg8.jpg) no-repeat center top;
+    background-size: cover;
+}*/
+.zd1 .zd1wrap .txt{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20%;
+}
+.zd1 .zd1wrap .txt h4{
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 8px;
+
+}
+.zd1 .zd1wrap .txt h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.zd1 .zd1wrap .txt span{
+    font-size: 47px;
+    padding: 0 19px;
+}
+.zd1 .zd2wrap .txt{
+    position: absolute;
+    width: 60px;
+    height:54px;
+    border:1px solid #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 17px;
+    padding-top: 6px;
+    left: calc((100% - 62px) / 2);
+    bottom: 20%;
+    z-index: 9;
+    animation: fadeInUp 1s ease 1.3s 1 normal both;
+}
+.zd2 .zd1wrap .txt,.zd3 .zd1wrap .txt,
+.zd4 .zd1wrap .txt{
+    position: absolute;
+    top: 10%;
+    width: 166px;
+    text-align: center;
+    left: calc((100% - 166px) / 2);
+}
+.zd2 .zd1wrap .txt{
+      width: 90%;
+      /*padding-top: 20%;*/
+    left: 5%;
+}
+.zd2 .zd1wrap .txt h2,.zd3 .zd1wrap .txt h2,
+.zd4 .zd1wrap .txt h2{
+    font-size: 22px;
+    margin-top: 18px;
+
+}
+
+.zd4 .zd1wrap .txt h3,.zd4 .zd1wrap .txt h5{
+    font-weight: normal;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.swiper-slide-active .zd4 .zd1wrap .txt h3{
+        animation: fadeInRight 1s ease 0.8s 1 normal both;
+}
+.swiper-slide-active .zd4 .zd1wrap .txt h5{
+        animation: fadeInLeft 1s ease 1s 1 normal both;
+}
+.zd2 .zd1wrap .txt h4,.zd3 .zd1wrap .txt h4,
+.zd4 .zd1wrap .txt h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: url(../images/zd/fj.png) no-repeat center left;
+    background-size: 100%;
+    width: 145px;
+    height: 48px;
+    line-height: 47px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+.zd2 .zd1wrap .txt h2.color{
+    font-size: 18px;
+}
+.zd2 .zd1wrap .txt h2{
+    margin-top: 0;
+}
+.zd2 .zd1wrap .txt h3{
+        margin: 8px 0;
+    font-size: 21px;
+    font-weight: normal;
+}
+.zd2 .zd1wrap .txt h5{
+       color: #fff;
+    font-weight: normal;
+    margin-top: 6px;
+    font-size: 20px;
+    
+
+}
+.swiper-slide-active .zd2 .zd1wrap .txt h5{
+        animation: fadeInLeft 1s ease 0.5s 1 normal both;
+}
+.swiper-slide-active .zd2 .zd1wrap .txt h3{
+        animation: fadeInRight 1s ease 0.3s 1 normal both;
+}
+.zd2 .zd1wrap .txt h5 span{
+    padding:0 8px;
+}
+
+.swiper-slide-active .zd5 .txt h3{
+    animation: fadeInRight 1s ease 0.3s 1 normal both;
+}
+.swiper-slide-active .zd5 .txt h3.c1{
+    animation: fadeInRight 1s ease 0.5s 1 normal both;
+}
+.swiper-slide-active .zd5 .txt h3.c2{
+    animation: fadeInLeft 1s ease 0.8s 1 normal both;
+}
+.zd3 .txt h2 .color{
+    font-size: 18px;
+    margin-top: 6px;
+}
+.zd2 .zd1wrap .txt h4  span,.zd3 .zd1wrap .txt h4 span,
+.zd4 .zd1wrap .txt h4 span{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+.zd3 .zd1wrap .txt{
+    width: 90%;
+     left: 5%;
+}
+.zd4 .zd1wrap .txt{
+    width: 290px;
+     left: calc((100% - 290px) / 2);
+}
+
+.zd5 .txt,.zd6 .txt
+,.zd7 .txt,.zd8 .txt{
+    width: 80%;
+    height: auto;
+    padding: 20% 10% 0 10%;
+}
+.zd5 .txt h3,.zd6 .txt h3
+,.zd7 .txt h3,.zd8 .txt h3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.zd5 .txt h3 span,.zd6 .txt h3 span
+,.zd7 .txt h3 span,.zd8 .txt h3 span{
+    font-size: 24px;
+    padding:0 8px;
+    opacity: 0;
+}
+.zd7 .txt h4{
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+.zd5 .txt h2,.zd6 .txt h2
+,.zd7 .txt h2,.zd8 .txt h2{
+    color: #eac911;
+    font-size: 52px;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: 72px;
+    position: relative;
+}
+.zd5 .txt h5{
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 8px;
+    
+}
+.swiper-slide-active .zd5 .txt h5{
+    animation: fadeInRight 1s ease 1s 1 normal both;
+}
+.zd5 .txt h2 i, .zd6 .txt h2 i, .zd7 .txt h2 i, .zd8 .txt h2 i{
+    font-style: normal;
+    max-width:calc(100% - 34px);
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.zd5 .txt h2 span,.zd6 .txt h2 span
+,.zd7 .txt h2 span
+,.zd8 .txt h2 span{
+    font-size: 16px;
+    color: #feedf6;
+    font-weight: 400;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    bottom: 14px;
+    width: 18px;
+    padding-left: 8px;
+}
+.zd5 .txt h2 span{
+    width: 68px;
+}
+.zd5 .txt h2 i{
+    max-width: calc((100% - 80px));
+}
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        /*background: #fff;*/
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+
+/*动画*/
+.zd1 .img1{
+    width: 100%;
+    bottom: 20%;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+}
+.zd1 .img1{
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+}
+.zd1 .img2{
+    width: 140px;
+    top: 34%;
+    z-index: 0;
+    position: absolute;
+    left: calc((100% - 140px ) /2);
+}
+.zd1 .img3{
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+    position: absolute;
+    left:0;
+    animation: fadeInUp 1s ease 1s 1 normal both;;
+}
+
+.zd2 .img1{
+    width: 50%;
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    z-index: 0;
+}
+.zd2 .img2{
+    width: 76%;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+}
+
+.zd3 .img1{
+    width: 50%;
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    z-index: 0;
+}
+.zd3 .img2{
+    width: 76%;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+    z-index: 0;
+}
+
+.zd4 .img1{
+    width: 70%;
+    display: block;
+    position: absolute;
+    bottom: 28%;
+    left: 15%;
+}
+.zd4 .img2{
+    width: 76%;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+}
+
+.zd5 .img1{
+   width: 30%;
+   position: absolute;
+   bottom: 6%;
+   left: 16%;
+}
+.zd5 .img2{
+      width: 31%;
+      position: absolute;
+      bottom: 5%;
+      right: 15%;
+}
+.zd6 .img1{
+        width: 50%;
+    position: absolute;
+    bottom: 12%;
+    left: 19%;
+}
+.zd6 .img2{
+    width: 38%;
+    position: absolute;
+    bottom: 31%;
+    right: 9%;
+}
+.zd7 .img1{
+    width: 44px;
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+}
+
+.cir1 {
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    left: calc((100% - 104px) /2);
+    bottom: calc((100% - 300px) /2);
+    z-index: 2;
+}
+.cir1 img,.cir2 img
+{
+    width: 100%;
+    display: block;
+}
+
+.cir2{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: calc((100% - 230px) /2);
+    bottom: calc((100% - 411px) /2);
+    z-index: 0;
+}
+
+.zd8 .img1{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 27%;
+}
+.zd8 a,.zd4 a{
+    width: calc(80% - 4px);
+    border: 1px solid #fff;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    border-radius: 20px;
+}
+
+.swiper-slide-active .zd1 h2.tetx1{
+    animation: fadeInLeft 1s ease  1 normal both;
+}
+.swiper-slide-active .zd1 h2.tetx2{
+    animation: fadeInRight 1s ease  1 normal both;
+}
+.swiper-slide-active .zd1 h2.tetx2 .color{
+    animation: bounceIn 1s ease 0.5s  1 normal both;
+}
+.swiper-slide-active .zd2 .img1{
+    animation: rotateIn 1s linear 0s  normal both;
+}
+.swiper-slide-active .zd2 .img2{
+        animation: flipInX 1s ease 0.5s 1 normal both;
+}
+.swiper-slide-active  .txt h3{
+        animation: fadeInLeft 1s ease  1 normal both;
+}
+.swiper-slide-active  .txt h4{
+        animation: fadeInUp 1s ease 0s 1 normal both;
+}
+.swiper-slide-active  .txt h4 span{
+     animation: fadeIn 1s ease 0.5s 1 normal both;
+}
+.swiper-slide-active  .txt h3:nth-last-child(1){
+        animation: fadeInLeft 1s ease 0.8s 1 normal both;
+}
+.swiper-slide-active  .txt h2 span{
+        animation: zoomIn 1s ease 1s 1 normal both;
+        opacity: 1;
+}
+.swiper-slide-active  .txt h2 {
+        animation: fadeInLeft 1s ease 0.5s  1 normal both;
+}
+.swiper-slide-active  .txt h3 span{
+    animation: bounceIn 1s ease 1.5s  1 normal both;
+}
+.swiper-slide-active .zd2 .txt h2{
+     animation: fadeInLeft 1s ease  1 normal both;
+}
+.swiper-slide-active .img1{
+    animation: fadeInLeft 1s ease  1 normal both;
+}
+.swiper-slide-active .zd1 .img1{
+    animation: fadeInUp 1s ease 1.5s 1 normal both
+}
+.swiper-slide-active .img2{
+    animation: fadeInRight 1s ease   1 normal both;
+}
+.swiper-slide-active .zd1 .img2{
+    animation: fadeInLeft 1s ease 1s  1 normal both;
+}
+.swiper-slide-active .zd7 .img1{
+    animation: fadeInDown 1s ease 0.4s 1 normal both;
+}
+.swiper-slide-active .zd7 .img2{
+    animation: zoomIn 1s ease    1 normal both;
+}
+.swiper-slide-active .zd7 .img3{
+    animation: zoomIn 1s ease  0.4s  1 normal both;
+}
+.swiper-slide-active .zd8.img1{
+    animation: fadeInRight 1s ease 0.4s 1 normal both;
+}
+/*登陆*/
+.login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #09164a url(../images/dl/bg.jpg) no-repeat center top;
+    background-size: 100%;
+    z-index: 9999;
+    left: 0;
+}
+.login .zd1 .zd1wrap {
+    background: none;
+}
+.loginWrap{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+.loginWrap input.name,.loginWrap input.pwd{
+    background: none;
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:  1px solid #d6e0ff;
+    padding-left: 44px;
+    width: calc((100% - 44px));
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #d8daff;
+    margin-bottom: 18px;
+}
+.loginWrap p{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.7;
+}
+.loginWrap input.name{
+    background: url(../images/dl/1.png) no-repeat  10px center;
+    background-size: 18px;
+}
+.loginWrap input.pwd{
+    background: url(../images/dl/2.png) no-repeat  10px center;
+    background-size: 18px;
+}
+.loginWrap input.btn{
+    border: none;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid #d6e0ff;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 22px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+.down{
+    position: absolute;
+    width: 30px;
+    bottom: 5%;
+    left: calc((100% - 30px) /2);
+    z-index: 99;
+    animation: fadeInUp 2s 1s infinite ease-in-out;
+}
+
+.swiper-slide-active .zd7 .txt h2 i,.swiper-slide-active .zd8 .txt h2 i{
+    animation:bounceIn 1s ease .8s  1 normal both;
+    /*opacity: 1;*/
+    max-width: calc(100% - 55px);
+}
+ .zd7 .txt h2 span, .zd8 .txt h2 span{
+    width: 50px;
+ }
+  .swiper-slide-active .zd7 .txt h2{
+    animation: bounceIn 1s ease 0.5s 1 normal both;
+ }
+.swiper-slide-active .zd8 .txt h3{
+    animation: fadeInRight 1s ease 0.3s 1 normal both
+}
+.zd8 .txt h4{
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 8px;
+   
+}
+.swiper-slide-active .zd8 .txt h4{
+     animation: bounceIn 1s ease 0.5s 1 normal both;
+}
+.swiper-slide-active #Forward{
+    animation: pulse 1s ease 0.5s infinite normal both;
+}
+@media screen and (max-height:480px) and (max-width:320px) {
+    .loginWrap{
+        bottom: 5%;
+    }
+    .loginWrap input.btn{
+        margin-top: 30px;
+    }
+    .zd1 .zd1wrap .txt{
+        padding-top: 17%;
+    }
+    .zd2 .zd1wrap .txt, .zd3 .zd1wrap .txt, .zd4 .zd1wrap .txt{
+        top: 6%;
+    }
+    .zd2 .img1{
+        width: 60%;
+        left: 20%;
+    }
+    .zd3 .img1{
+        width: 50%;
+        left: 25%;
+    }
+    .zd5 .txt, .zd6 .txt, .zd7 .txt, .zd8 .txt{
+        padding-top: 16%;
+    }
+    .cir1{
+        width: 80px;
+        height: 80px;
+        left:calc((100% - 80px) /2);
+            bottom: calc((100% - 268px) /2);
+    }
+    .cir2 {
+        width: 192px;
+    height: 228px;
+    position: absolute;
+    left: calc((100% - 201px) /2);
+    bottom: calc((100% - 437px) /2);
+    z-index: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

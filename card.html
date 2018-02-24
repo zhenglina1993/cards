@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>贺卡</title>
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'> </script>
+</head>
+<body >
+<section>
+    <div class="wripper">
+    <div class="mode1">
+         <div class="mode17img">
+            <img src="images/hua1.png" alt="" class='fadeInDown animated'>
+        </div>
+         <div class="mode18img">
+            <img src="images/hua2.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode1img">
+            <img src="images/bg2_01.png" alt="" class='fadeInDown animated'>
+        </div>
+       <div class="mode19img">
+            <img src="images/deng.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode20img">
+            <img src="images/deng.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode21img">
+            <img src="images/dl1.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode22img">
+            <img src="images/dl1.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode23img">
+            <img src="images/ren.png" alt="" class='fadeInRight animated'>
+        </div>
+        <div class="mode24img">
+            <img src="images/ren1.png" alt="" class='fadeInUp animated'>
+        </div>
+        <div class="mode25img">
+            <img src="images/ren2.png" alt="" class='fadeInUp animated'>
+        </div>
+        <div class="mode2img">
+            <img src="images/ico1_02.png" alt="" class='fadeInDown animated'>
+        </div>
+        <div class="mode3img">
+            <img src="images/yun3_10.png" alt="" class='fadeInRight animated'>
+        </div>
+        <div class="mode4img">
+            <img src="images/yun3_10.png" alt="" class='fadeInLeft animated'>
+        </div>
+         <div class="mode5img">
+            <img src="images/txt1_03.png" alt="" class='zoomIn animated'>
+        </div>
+        <div class="mode6img">
+            <img src="images/txt2_07.png" alt="" class='fadeInLeft animated'>
+        </div>
+        <div class="mode7img">
+            <img src="images/txt_03.png" alt="" class='bounceInUp animated'>
+        </div>
+        <div class="mode8img">
+            <img src="images/men_02.png" alt=""   class='fadeIn animated'>
+        </div>
+        <div class="mode9img">
+            <img src="images/yun0_07.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode10img">
+            <img src="images/yun0_07.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode11img">
+            <img src="images/yun_03.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode12img">
+            <img src="images/bg_02.png" alt=""  class='fadeIn animated'> 
+        </div>
+        <div class="mode13img">
+            <img src="images/men1_03.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode14img">
+            <img src="images/men1_02.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode15img">
+            <img src="images/shou_27.png" alt=""  class='fadeIn animated'>
+        </div>
+        <div class="mode16img">
+            <img src="images/start.png" alt="" >
+        </div>
+    
+
+
+
+    </div>
+    <div class="mode2" style='display:none'>
+        <div class="operat">
+           
+            <input type="text" id='name' class='name' placeholder='请输入您的名字' maxlength="12">
+            <button class="pro" onclick="drawImage()">生成</button>
+            <p>温馨提示：长按图片可保存到手机或直接发送给朋友！</p>
+        </div>
+        <div class="img-list">
+            <ul class="clearfix">
+                <li onclick="changeImg(1)" class="on"><img src="images/txt1.png" alt=""></li>
+                <li onclick="changeImg(2)"><img src="images/txt2.png" alt=""></li>
+                <li onclick="changeImg(3)"><img src="images/txt3.png" alt=""></li>
+            </ul>
+        </div>
+        
+        <div class="before" style="width:90%;text-align: center;margin:0 auto;overflow: hidden;">
+            <img id="imgbox" src="images/1.png" alt="" style="width:100%;">
+        </div>
+        <div class="pic">
+            <canvas id="myCanvas" style="display:none;">
+                您的浏览器不支持canvas
+            </canvas>
+        </div>
+    </div>
+    </div>
+<script type="text/javascript" src='js/js.js'></script>
+</section>
+
+</body>
+</html>
